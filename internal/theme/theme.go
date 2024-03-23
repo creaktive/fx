@@ -99,7 +99,7 @@ var (
 	themeNames       []string
 	CurrentTheme     Theme
 	defaultCursor    = toColor(lipgloss.NewStyle().Reverse(true).Render)
-	defaultPreview   = toColor(lipgloss.NewStyle().Foreground(lipgloss.Color("8")).Render)
+	defaultPreview   = toColor(lipgloss.NewStyle().Foreground(lipgloss.Color("10")).Render)
 	defaultStatusBar = toColor(lipgloss.NewStyle().Background(lipgloss.Color("7")).Foreground(lipgloss.Color("0")).Render)
 	defaultSearch    = toColor(lipgloss.NewStyle().Background(lipgloss.Color("11")).Foreground(lipgloss.Color("16")).Render)
 	defaultNull      = fg("243")
