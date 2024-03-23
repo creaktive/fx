@@ -96,14 +96,19 @@ func init() {
 }
 
 var (
-	themeNames       []string
-	CurrentTheme     Theme
-	defaultCursor    = toColor(lipgloss.NewStyle().Reverse(true).Render)
-	defaultPreview   = toColor(lipgloss.NewStyle().Foreground(lipgloss.Color("8")).Render)
-	defaultStatusBar = toColor(lipgloss.NewStyle().Background(lipgloss.Color("7")).Foreground(lipgloss.Color("0")).Render)
-	defaultSearch    = toColor(lipgloss.NewStyle().Background(lipgloss.Color("11")).Foreground(lipgloss.Color("16")).Render)
-	defaultNull      = fg("243")
-	defaultSize      = toColor(lipgloss.NewStyle().Foreground(lipgloss.Color("8")).Render)
+	themeNames []string
+
+	CurrentTheme Theme
+
+	underline         = toColor(lipgloss.NewStyle().Underline(true).Render)
+	defaultCursor     = toColor(lipgloss.NewStyle().Reverse(true).Render)
+	defaultPreview    = toColor(lipgloss.NewStyle().Foreground(lipgloss.Color("10")).Render)
+	defaultStatusBar  = toColor(lipgloss.NewStyle().Background(lipgloss.Color("7")).Foreground(lipgloss.Color("0")).Render)
+	defaultSearch     = toColor(lipgloss.NewStyle().Background(lipgloss.Color("11")).Foreground(lipgloss.Color("16")).Render)
+	defaultNull       = fg("243")
+	defaultSize       = toColor(lipgloss.NewStyle().Foreground(lipgloss.Color("8")).Render)
+	defaultLineNumber = toColor(lipgloss.NewStyle().Foreground(lipgloss.Color("8")).Render)
+	defaultError      = toColor(lipgloss.NewStyle().Background(lipgloss.Color("196")).Foreground(lipgloss.Color("255")).Render)
 	ShowSizes        = false
 )
 
